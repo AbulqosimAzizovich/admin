@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- build css -->
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="">
+            <div class="wrapper flex items-start">
+                <aside class="">
+                    <nav class="bg-[#F2EAE1] w-[270px]  border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+                        <div class="px-[2px] h-[100vh] max-w-screen-xl">
+
+                            <a href="#" class="flex items-center justify-start font-bold mb-6">
+                                <img class="w-[20px] h-[20px] mr-2" src="./src/assets/images/lg.svg" alt="logo">
+                                <p class="text-[18px] text-gray-900 dark:text-white">CRUD OPERATIONS</p>
+                            </a>
+
+                            <div class="block lg:order-2">
+
+                                <button data-collapse-toggle="mobile-menu-2" type="button"
+                                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                    aria-controls="mobile-menu-2" aria-expanded="false">
+                                    <span class="sr-only">Open main menu</span>
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 mt-[330px] mb-[140px]"
+                                id="mobile-menu-2">
+                                <ul>
+                                    <a href="./dashboard.html"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/home.svg" alt="">
+                                        <p class="text-[14px] font-medium">Home</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/course.svg" alt="">
+                                        <p class="text-[14px] font-medium">Course</p>
+                                    </a>
+                                    <a href="./student.html"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/students.svg" alt="">
+                                        <p class="text-[14px] font-medium">Students</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/payment.svg" alt="">
+                                        <p class="text-[14px] font-medium">Payment</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/report.svg" alt="">
+                                        <p class="text-[14px] font-medium">Report</p>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center gap-4 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-[#FEFBEC] focus:bg-[#FEAF00] px-10 mt-5">
+                                        <img src="./src/assets/images/settings.svg" alt="">
+                                        <p class="text-[14px] font-medium">Settings</p>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <a href="#"
+                                class="flex items-center justify-center gap-x-4 px-10 w-[193px] h-[41px] rounded-[10px] duration-300 hover:bg-red-100 focus:bg-red-400">
+                                <p class="text-[14px] font-medium">Logout</p>
+                                <img src="./src/assets/images/logout.svg" alt="Logout">
+                            </a>
+                        </div>
+                    </nav>
+                </aside>
+
+                <div class="main w-full px-[30px] py-[10px]">
+
+                    <div class="main-header flex justify-between">
+                        <a href="#">
+                            <img src="./src/assets/images/back.svg" alt="back">
+                        </a>
+
+                      
+                        <div class="flex items-center gap-[27px]">
+                            <input type="search" placeholder="Search..." class="px-[13px] py-[9px] w-[212px] h-[37px] border rounded-[8px] border-[#E5E5E5] ">
+                            <a href="#">
+                                <img src="./src/assets/images/bell.svg" alt="bell">
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex items-center justify-around mt-[30px]">
+                        <div class="cards relative w-[255px] h-[157px] bg-[#F0F9FF] p-5 rounded-[8px] mt-[30px] cursor-pointer hover:shadow-xl ">
+                            <img src="./src/assets/images/std.svg" alt="students">
+                            <p class="text-[14px] font-medium text-[#6C6C6C] mt-4 mb-[10px]">Students</p>
+                            <p class="font-bold text-[30px] absolute right-0 bottom-0 p-5">243</p>
+                        </div>
+
+                        <div class="cards relative w-[255px] h-[157px] bg-[#FEF6FB] p-5 rounded-[8px] mt-[30px] cursor-pointer hover:shadow-xl">
+                            <img src="./src/assets/images/scr.svg" alt="students">
+                            <p class="text-[14px] font-medium text-[#6C6C6C] mt-4 mb-[10px]">Course</p>
+                            <p class="font-bold text-[30px] absolute right-0 bottom-0 p-5">13</p>
+                        </div>
+
+                        <div class="cards relative w-[255px] h-[157px] bg-[#FEFBEC] p-5 rounded-[8px] mt-[30px] cursor-pointer hover:shadow-xl">
+                            <img src="./src/assets/images/py.svg" alt="students">
+                            <p class="text-[14px] font-medium text-[#6C6C6C] mt-4 mb-[10px]">Payments</p>
+                            <p class="font-bold text-[30px] absolute right-0 bottom-0 p-5"><span class="text-[15px]">INR</span> 556,000</p>
+                        </div>
+
+                        <div class="cards relative w-[255px] h-[157px] p-5 rounded-[8px] mt-[30px] lnr cursor-pointer hover:shadow-xl">
+                            <img src="./src/assets/images/user.svg" alt="students">
+                            <p class="text-[14px] font-medium text-[#fff] mt-4 mb-[10px]">Users</p>
+                            <p class="font-bold text-[30px] absolute right-0 bottom-0 p-5">3</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="./script/dashboard.js"></script>
+</html>
