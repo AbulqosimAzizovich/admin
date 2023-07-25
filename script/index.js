@@ -16,8 +16,7 @@ btn.addEventListener("submit", (e) => {
           password.value === result[0].password
         ) {
           localStorage.setItem("token", "registered");
-          return (window.location.href =
-            "http://127.0.0.1:5501/dashboard.html");
+          return (window.location.pathname = '../dashboard.html');
         }
       }
     } catch {
